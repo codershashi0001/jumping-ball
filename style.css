@@ -1,0 +1,73 @@
+/*# sourceMappingURL=style.css.map */* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 70vh;
+  background-color: blue;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* padding: 50px; */
+  animation: left-right 3s linear  infinite
+,top-bottom 1s ease-out infinite alternate;
+}
+.box2{
+    position: absolute;
+      width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: red;
+  animation: anix 3s linear infinite;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes anix{
+    from{
+        background-color: blueviolet;
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes left-right {
+  form {
+    rotate: 180deg;
+    left: 0%;
+  }
+  to {
+    rotate: 180deg;
+    left: 100%;
+  }
+}
+
+
+@keyframes top-bottom {
+  form {
+    bottom: 0%;
+  }
+  to {
+    bottom: 80%;
+  }
+}
+
